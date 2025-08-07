@@ -1,108 +1,87 @@
-body{
+body {
     margin: 0;
-    padding:0;
-    line-height: 0.5;
-    background:linear-gradient(to left,#7808f0,#06bdf5);
-    font-family: sans-serif;
+    padding: 0;
+    line-height: 1.5;
+    background: linear-gradient(to left, #150525, #ce1515);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.calci{
+.calci {
     width: 500px;
-    padding-top: 100px;
-    padding-bottom: 100;
+    padding: 100px 0;
     position: absolute;
-    top:50%;
-    left:70%;
-    transition:0.25px;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    transition: 0.3s;
 }
-#zero{
 
-height: 55;
-width: 116;
-font-size: 20;
-    font-family: sans-serif;
+#zero {
+    height: 55px;
+    width: 116px;
+    font-size: 20px;
     font-weight: 300;
-
-}
-
-#display{
-    
-    border:none;
-    background: white;
     border-radius: 30px;
-    width: 245;
-    font-size: 20;
-    font-family: sans-serif;
-    font-weight: 300;
-    height: 60;
-    margin: auto;
-    border:2px solid white(5, 218, 255, 0.726);
-    color: black;
-
-
-
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.button{
-    width: 55;
-    height: 55;
-    padding-top: -1;
-    font-size: 20;
+
+#zero:hover {
+    background: #e0f7ff;
+    box-shadow: 0 0 10px #00e6ff;
+}
+
+#display {
     border: none;
     background: white;
-    font-family: sans-serif;
-    font-weight: 300;
-    border:0;
     border-radius: 30px;
-    margin: 1.5;
-    transition:0.25px;
-    
-    
+    width: 245px;
+    font-size: 20px;
+    font-weight: 400;
+    height: 60px;
+    margin: auto;
+    padding: 0 15px;
+    border: 2px solid rgba(5, 218, 255, 0.726);
+    color: black;
+    text-align: right;
+    box-shadow: 0 0 10px #00e6ff inset;
 }
 
-h1{
+.button, .operator {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px;
+    margin: 6px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover, .operator:hover {
+    background: #00d9ff;
+    box-shadow: 0 0 10px #00e6ff;
+}
+
+h1 {
     margin-top: 300px;
     margin-left: 100px;
-    font-family: sans-serif;
-
-    font-size:50;
-   
+    font-size: 50px;
     text-decoration: underline;
-
-color: white;
-text-transform: uppercase;
-font-weight: 700;}
-
-h2{
-
     color: white;
-    margin-top: -1px;
-    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+    margin-top: -10px;
     margin-left: 438px;
-}
-.operator{
-    width: 55;
-    height: 55;
-    padding-top: -1;
-    font-size: 20;
-    text-align: center;
-    color: black;
-    border: none;
-    background: white;
-    font-family: sans-serif;
-    font-weight: 500;
-    border:0;
-    border-radius: 30px;
-    margin: 1.5;
-    transition:0.25px;
-    cursor:pointer;
-    
-    
-    
-}
-
-
-.operator:hover{
-    background: #00d9ff;
+    font-size: 20px;
+    text-decoration: underline;
 }
